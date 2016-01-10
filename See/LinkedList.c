@@ -1,12 +1,5 @@
-/*
- ============================================================================
- Name        : LinkedList.c
- Author      : SSS
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
+
+//References :  Some codes from geekforgeeks
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,28 +15,7 @@ struct node
 pointer to the new head node. */
 struct node *reverse (struct node *head, int k)
 {
-	/*struct node* current = head;
-	struct node* next = NULL;
-	struct node* prev = NULL;
-	int count = 0; */
 
-/*	while (current != NULL && count < k)
-	{
-		next = current->next;
-		current->next = prev;
-		prev = current;
-		current = next;
-		count++;
-	}
-	*/
-	/* next is now a pointer to (k+1)th node
-	Recursively call for the list starting from current.
-	And make rest of the list as next of first node */
-// 	if (next != NULL)
-// 	head->next = reverse(next, k);
-
-// 	/* prev is new head of the input list */
-// 	return prev;
 printf("here %d",head->data);
 struct node * temp = head;
 struct node * nextptr = NULL;
@@ -64,8 +36,7 @@ head = prevptr;
  return head;
 }
 
-/* UTILITY FUNCTIONS */
-/* Function to push a node */
+
 void push(struct node** head_ref, int new_data)
 {
 	/* allocate node */
